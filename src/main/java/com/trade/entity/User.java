@@ -26,6 +26,34 @@ public class User {
     private String userType;
     private String loginCounter;
 
+    private int balance;
+    private int earning;
+    private int investment;
+
+    public int getEarning() {
+        return earning;
+    }
+
+    public void setEarning(int earning) {
+        this.earning = earning;
+    }
+
+    public int getInvestment() {
+        return investment;
+    }
+
+    public void setInvestment(int investment) {
+        this.investment = investment;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
     public String getUserType() {
         return userType;
     }

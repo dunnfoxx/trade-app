@@ -58,9 +58,7 @@ public class HomeController {
         if (statusMessage.getStatus() != 200) {
             model.addAttribute("msg", statusMessage.getMessage());
             return "registration";
-
         }
-
 
         userResository.save(user);
         model.addAttribute("msg", "registration success");
@@ -101,8 +99,6 @@ public class HomeController {
           model.addAttribute("msg","invalid session");
           return "login";
       }
-
-
             if (user.getUsertype().equals("u")) {
                 if (user.getLoginCounter().equals("n")){
                     user.setLoginCounter("y");
@@ -201,6 +197,8 @@ public class HomeController {
         return "plan";
     }
 
-
-
+    @GetMapping("/contect")
+    public String contect(){
+        return "contect";
+    }
 }

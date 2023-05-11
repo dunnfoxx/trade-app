@@ -18,11 +18,11 @@
                 <input class="search" type="text" placeholder="Search"> <img class="search-icon"
                     src="/image/search.svg" alt="">
             </li>
-            <li>CONTACT US</li>
+            <li onclick="location.href='/contect'" target="_self" >CONTACT US</li>
             <li class="orange-btn" onclick="location.href='/login?flag=regis'" target="_self"></a> OPEN ACCOUNT
             </li>
             <li onclick="location.href='/login?flag=login'" target="_self">LOGIN</li>
-            <li>SIGN IN</li>
+
         </ul>
     </div>
     <div class="header-navbar">

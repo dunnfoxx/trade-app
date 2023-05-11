@@ -24,11 +24,10 @@
                 <input class="search" type="text" placeholder="Search"> <img class="search-icon"
                     src="/fxtm/image/search.svg" alt="">
             </li>
-            <li>CONTACT US</li>
+            <li onclick="location.href='/contect'" target="_self" >CONTACT US</li>
             <li class="orange-btn" onclick="location.href='/login?flag=regis'" target="_self"></a> OPEN ACCOUNT
             </li>
             <li onclick="location.href='/login?flag=login'" target="_self">LOGIN</li>
-            <li>SIGN IN</li>
         </ul>
     </div>
     <div class="header-navbar" id="headernavbar">
@@ -234,11 +233,11 @@
 
 				<div class="remember-me--forget-password">
 
-					<label>
+
 						<input type="checkbox" name="item" checked />
-						<span class="text-checkbox">Remember me </span>
-					</label>
-					<p>forget password?</p>
+
+
+					<p>Remember me  forget password?</p>
 				</div>
 
 				<br>

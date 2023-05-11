@@ -41,6 +41,7 @@
     <li>Home</li>
     <li onclick="location.href='/plan'" >Plan</li>
     <li>User</li>
+    <li onclick="location.href='/pytmNotify'" target="_self">Payment Notification</li>
     <li>
         <a href="">Admin</a><br>
         <a href="">Logout</a>
