@@ -2,9 +2,12 @@ package com.trade.controller;
 
 
 import com.trade.entity.Plan;
+import com.trade.entity.Plans;
 import com.trade.entity.User;
+import com.trade.model.EarningResponse;
 import com.trade.model.StatusMessage;
 import com.trade.repository.PlanRepository;
+import com.trade.repository.PlansRepository;
 import com.trade.repository.UserResository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +29,9 @@ public class HomeController {
 
     @Autowired
     PlanRepository planRepository;
+
+    @Autowired
+    PlansRepository plansRepository;
 
 
     @GetMapping("/")
@@ -218,6 +224,23 @@ public class HomeController {
     @GetMapping("/adminHome")
     public String adminHome(){
         return "adminHome";
+    }
+    @GetMapping("/earn")
+    public String earn(Model model,@RequestParam int id){
+        List<Plans> plans = plansRepository.findAllByUserId(id);
+
+
+
+
+        EarningResponse earningResponse = new EarningResponse();
+
+
+
+        model.addAttribute("earns",earningResponse);
+
+
+
+        return "earning";
     }
 
 }

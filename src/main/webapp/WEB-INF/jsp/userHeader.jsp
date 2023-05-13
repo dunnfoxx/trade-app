@@ -8,7 +8,7 @@
       <li onclick="location.href='/buy'" target="_self">BUY PLAN </li>
       <li>REPORT</li>
       <li style="color: yellow"> <b>INVESTMENT</b> <br>${user.investment}</li>
-      <li style="color: greenyellow"> <b>EARNING</b> <br>${user.earning}</li>
+      <li style="color: greenyellow" onclick="location.href='/earn?id=${user.id}'" target="_self" > <b>EARNING</b> <br>${user.earning}</li>
       <li style="color: red"> <b>BALANCE</b> <br>${user.balance}</li>
 
 

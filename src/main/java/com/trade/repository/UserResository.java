@@ -13,7 +13,13 @@ public interface UserResository extends JpaRepository<User, Integer> {
 
     User findByEmail(String email);
 
-    List<User>findAllByEmailOrMobile(String mobile,String email);
-List<User>findByAble(boolean able);
+    List<User> findAllByEmailOrMobile(String mobile, String email);
+
+    List<User> findByAble(boolean able);
+
+    Long countByAble(boolean able);
+    // find All
+    //int sum =   for(sum+= user.getBalance())
+
 
 }
