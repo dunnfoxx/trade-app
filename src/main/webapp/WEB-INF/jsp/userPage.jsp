@@ -148,27 +148,7 @@
 </head>
 
 <body>
-<div class="container">
-    <header>
-        <ul>
-            <li onclick="location.href='/addFund'" target="_self">ADD FUND</li>
-            <li>WITHDRAWL</li>
-            <li>BUY PLAN </li>
-            <li>REPORT</li>
-            <li style="color: yellow"> <b>INVESTMENT</b> <br>${user.investment}</li>
-            <li style="color: greenyellow"> <b>EARNING</b> <br>${user.earning}</li>
-            <li style="color: red"> <b>BALANCE</b> <br>${user.balance}</li>
-
-            <p class="first">${user.firstName}</p>
-
-
-            <li> <img class="img" src="icon.jpg" alt=""></li>
-
-        </ul>
-    </header>
-
-
-</div>
+<jsp:include page="userHeader.jsp"/>
 <div class="table2">
     <table>
 

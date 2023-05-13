@@ -118,7 +118,7 @@
 
   </style>
 </head>
-<jsp:include page="adminPage.jsp"/>
+<jsp:include page="adminHeader.jsp"/>
 
 <body>
 <div class="content">

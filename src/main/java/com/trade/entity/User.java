@@ -30,6 +30,16 @@ public class User {
     private int earning;
     private int investment;
 
+    private boolean able;
+
+    public boolean isAble() {
+        return able;
+    }
+
+    public void setAble(boolean able) {
+        this.able = able;
+    }
+
     public int getEarning() {
         return earning;
     }

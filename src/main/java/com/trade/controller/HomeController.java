@@ -51,6 +51,8 @@ public class HomeController {
         user.setMobile(mobile);
         user.setPassword(password);
         user.setLoginCounter("n");
+        user.setUserType("u");
+        user.setAble(true);
 
 
         List<User> existing = userResository.findAllByEmailOrMobile(email, mobile);
@@ -92,18 +94,25 @@ public class HomeController {
         }
         if (user.getPassword().equals(password)) {
 
-      HttpSession session =   request.getSession(true);
-      session.setAttribute("user", user);
 
-      if (session ==null){
-          model.addAttribute("msg","invalid session");
-          return "login";
-      }
+            if (user.isAble()){
+                model.addAttribute("msg","Your account is inactive");
+                return "login";
+            }
+            HttpSession session =   request.getSession(true);
+            session.setAttribute("user", user);
+
+            if (session == null){
+                model.addAttribute("msg","invalid session");
+                return "login";
+            }
+
             if (user.getUsertype().equals("u")) {
                 if (user.getLoginCounter().equals("n")){
                     user.setLoginCounter("y");
                     userResository.save(user);
-                    return "foundPage";
+
+                    return "fund";
                 }else return "userPage";
             } else {
                 return "adminPage";
@@ -201,4 +210,14 @@ public class HomeController {
     public String contect(){
         return "contect";
     }
+
+    @GetMapping("/home")
+    public String homePage(){
+        return "userPage";
+    }
+    @GetMapping("/adminHome")
+    public String adminHome(){
+        return "adminHome";
+    }
+
 }

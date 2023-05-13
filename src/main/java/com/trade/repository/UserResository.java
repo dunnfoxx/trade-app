@@ -14,6 +14,6 @@ public interface UserResository extends JpaRepository<User, Integer> {
     User findByEmail(String email);
 
     List<User>findAllByEmailOrMobile(String mobile,String email);
-
+List<User>findByAble(boolean able);
 
 }
