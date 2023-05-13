@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.top-content{
+    margin-bottom: -35px;
+}
+.top-content-img{
+    margin: -67px 0px;
+    width: 100%;
+    height: 420px;
+}
+.top-content-git{
+    position: relative;
+    top: -210px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-content-git h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.top-content-git-contect{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    
+}
+.top-content-git-contect p{
+    padding: 0px 10px;
+}
+.mid-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 80px;
+}
+.mid-content-left{
+    background-color: #ff4521;
+    color: white;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px 40px;
+    width: 33%;
+    position: relative;
+    top: 30px;
+}
+.mid-content-left img{
+padding-right: 8px;
+}
+.mid-content-left .p1{
+    font-size: 23px;
+    font-weight: 600;
+    margin: 45px 0px 5px;
+}
+.mid-content-left .p2{
+    font-size: 17px;
+    margin: 0;
+
+}
+.mid-content-left .p3{
+    padding-left: 26px;
+
+}
+.mid-content-right{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-left: 30px;
+    height: 90%;
+    padding: 25px 60px;
+    position: relative;
+    top: 30px;
+}
+.mcr-top{
+    display: flex;
+    flex-direction: row;
+    
+}
+.mcr-top-left{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(26,29,48,0.16);
+    padding: 10px;
+    
+}
+.mcr-top-left h2{
+    color: #ff4521;
+    font-size: 25px;
+    font-weight: 600;
+}
+.mcr-top-left p{
+    font-size: 17px;
+}
+.mcr-top-right{     
+    padding: 25px 111px 10px 19px;
+}
+.mcr-top-right p{
+    font-size: 16px;
+    padding-top: 35px;
+}
+.mcr-bottom input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    outline: none;
+    
+}
+input::placeholder{
+    color: gray;
+  }
+ 
+  
+  .mcr-bottom{
+    line-height: 80px;
+  }
+  .mcr-bottom select{
+    width: 103.8%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    outline: none;
+    
+  }
+  .mcr-bottom textarea{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    outline: none;
+  }
+  .send-btn{
+    padding: 10px 65px;
+    font-weight: 700;
+    border: 1px solid #ff4521 ;
+    background-color: #fff;
+    color: #ff4521 ;
+    border-radius: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 18px;
+    transition: 0.2s;
+    width: 100px;
+    height: 40px;
+  }
+  .send-btn:hover{
+    color: #fff;
+    background-color: #ff4521;
+  }
+  .form-select{
+    color: grey;
+  }
+  
